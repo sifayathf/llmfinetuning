@@ -1,0 +1,19 @@
+# Core
+torch>=2.3
+transformers>=4.56
+datasets>=3.0
+accelerate>=1.0
+peft>=0.17
+trl>=0.23
+# PDF
+pypdf>=5.0
+# RAG + evaluation
+sentence-transformers>=3.0
+scikit-learn>=1.3
+numpy
+# QLoRA (NVIDIA GPU only)
+bitsandbytes>=0.45; sys_platform == "linux"
+# LLM teacher / LLM judge through any OpenAI-compatible API (OpenAI, Ollama, vLLM...)
+openai>=1.40
+# Sample PDF generator
+reportlab
