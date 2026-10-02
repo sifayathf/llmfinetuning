@@ -44,6 +44,8 @@ python src/chat.py --model outputs/sft-lora --rag-index outputs/rag_index
 
 To run all of the above in one go: `bash scripts/run_pipeline.sh data/your.pdf`.
 
+For a single small document such as a resume, using Unsloth on Colab, see `notebooks/Resume_QA_Unsloth_FineTune.ipynb`. It also explains the common mistakes that make a fine-tuned model answer wrongly.
+
 The notebook `notebooks/LLM_FineTuning_on_PDF.ipynb` walks through the same steps with explanations. It runs on a free Colab T4 GPU.
 
 | file | purpose |
