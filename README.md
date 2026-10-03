@@ -44,6 +44,8 @@ python src/chat.py --model outputs/sft-lora --rag-index outputs/rag_index
 
 To run all of the above in one go: `bash scripts/run_pipeline.sh data/your.pdf`.
 
+**Any PDF, end-to-end in Colab:** `notebooks/Generic_PDF_FineTune_Unsloth.ipynb`. It generates synthetic Q&A with a teacher model and filters out hallucinated pairs, fine-tunes the smallest Qwen (0.5B) with QLoRA, evaluates base vs fine-tuned vs grounded answering automatically, and exports GGUF (q4_k_m/q8_0) and an Ollama Modelfile.
+
 For a single small document such as a resume, using Unsloth on Colab, see `notebooks/Resume_QA_Unsloth_FineTune.ipynb`. It also explains the common mistakes that make a fine-tuned model answer wrongly.
 
 The notebook `notebooks/LLM_FineTuning_on_PDF.ipynb` walks through the same steps with explanations. It runs on a free Colab T4 GPU.
